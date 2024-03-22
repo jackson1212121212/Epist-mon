@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epistémon - Your Gateway to Infinite Knowledge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Epistémon</h1>
+        <nav>
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="ai-chat">
+            <!-- AI chatbot interface will be dynamically generated here -->
+        </section>
+        
+        <section id="courses">
+            <h2>Explore Our Courses</h2>
+            <!-- Display list of courses with descriptions -->
+        </section>
+        
+        <section id="community">
+            <h2>Join Our Community</h2>
+            <!-- Display community forums, discussions, etc. -->
+        </section>
+        
+        <section id="about">
+            <h2>About Us</h2>
+            <!-- Information about the website and its mission -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Epistémon. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+// Code for integrating AI chatbot services will go here
+
+// Function to initialize the AI chatbot interface
+function initChatbot() {
+    // Code to set up chatbot UI and functionality
+}
+
+// Function to handle user input and interact with the AI chatbot
+function handleUserInput(input) {
+    // Code to send user input to AI service and display response
+}
+
+// Event listener for user input (e.g., pressing Enter in the chat input field)
+document.getElementById('chat-input').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        let userInput = this.value.trim();
+        handleUserInput(userInput);
+        this.value = ''; // Clear input field after sending
+    }
+});
+
+// Function to fetch and display list of courses
+function displayCourses() {
+    // Code to fetch course data from backend or API
+    // Code to dynamically generate HTML for displaying courses
+}
+
+// Function to fetch and display community content
+function displayCommunity() {
+    // Code to fetch community data from backend or API
+    // Code to dynamically generate HTML for displaying community content
+}
+
+// Function to fetch and display information about the website
+function displayAbout() {
+    // Code to display information about the website and its mission
+}
+
+// Function to initialize the website
+function initWebsite() {
+    initChatbot();
+    displayCourses();
+    displayCommunity();
+    displayAbout();
+}
+
+// Call initWebsite() to initialize the website when the page loads
+document.addEventListener('DOMContentLoaded', initWebsite);
